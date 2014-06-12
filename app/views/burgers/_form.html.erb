@@ -1,0 +1,86 @@
+
+<%= form_for @burger do |f| %>
+  <div class="box_bread">
+  <h2>Bread:</h2>
+  <p>
+    <%= f.radio_button :bread, "wheat" %>
+    <%= f.label "Wheat" %>
+  </p>
+  <p>
+    <%= f.radio_button :bread, "sesame" %>
+    <%= f.label "Sesame" %>
+  </p>
+  <p>
+    <%= f.radio_button :bread, "oat" %>
+    <%= f.label "Oat" %>
+  </p>
+  <p>
+    <%= f.radio_button :bread, "multi cereal" %>
+    <%= f.label "Multi Cereal" %>
+  </p>
+  </div>
+
+  <div class="box_patty">
+  <h2>Patty:</h2>
+  <p>
+    <%= f.radio_button :patty, "beef" %>
+    <%= f.label "Beef" %>
+  </p>
+  <p>
+    <%= f.radio_button :patty, "chicken" %>
+    <%= f.label "Chicken" %>
+  </p>
+  <p>
+    <%= f.radio_button :patty, "fish" %>
+    <%= f.label "Fish" %>
+  </p>
+  <p>
+    <%= f.radio_button :patty, "tofu" %>
+    <%= f.label "Tofu" %>
+  </p>
+  </div>
+
+  <div class="box_sauce">
+  <h2>Sauce:</h2>
+  <p>
+    <%= f.radio_button :sauce, "hot" %>
+    <%= f.label "Hot" %>
+  </p>
+  <p>
+    <%= f.radio_button :sauce, "spicy" %>
+    <%= f.label "Spicy" %>
+  </p>
+  <p>
+    <%= f.radio_button :sauce, "mild" %>
+    <%= f.label "Mild" %>
+  </p>
+  <p>
+    <%= f.radio_button :sauce, "fruity" %>
+    <%= f.label "Fruity" %>
+  </p>
+  </div>
+
+  <div class="box_vegetable">
+  <h2>Vegetable:</h2>
+  <p>
+    <%= f.radio_button :vegetable, "green tomato" %>
+    <%= f.label "Green Tomato" %>
+  </p>
+  <p>
+    <%= f.radio_button :vegetable, "cucumber" %>
+    <%= f.label "Cucumber" %>
+  </p>
+  <p>
+    <%= f.radio_button :vegetable, "salad" %>
+    <%= f.label "Salad" %>
+  </p>
+  <p>
+    <%= f.radio_button :vegetable, "calapenos" %>
+    <%= f.label "Calapenos" %>
+  </p>
+  </div>
+
+  <div class="clear">
+  <%= f.submit %>
+  <% end %>
+  </div>

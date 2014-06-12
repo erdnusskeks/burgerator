@@ -1,0 +1,16 @@
+<h2>Voilà, your awesome burger:</h2>
+<!-- <h2>Click for more!</h2> -->
+
+
+<div class="container">
+  <div class="yellow"><%= "your favourite burger lives between two #{@burger.bread} buns" %></div>
+  <!-- <p id="show_patty">Show patty!</p> -->
+  <div class="green" id="vegetable"><%= "decorated with fresh #{@burger.vegetable}" %></div>
+  <div class="red" id="sauce"><%= "joined by a marvellous #{@burger.sauce} sauce" %></div>
+  <div class="brown" id="patty"><%= "it's a #{@burger.patty}licious dream" %></div>
+  <div class="yellow" id="bread"><%= "perfect embrace: The second #{@burger.bread} bun" %></div>
+</div>
+<br />
+<%= "Go and grap your fantastic #{@burger.sauce} #{@burger.vegetable} #{@burger.bread} #{@burger.patty} burger!" %><br />
+<%= "Or jump back and have " %><%= link_to "another one!", burgers_path %>
+
