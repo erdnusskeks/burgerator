@@ -24,6 +24,39 @@
        url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated2 {
+  animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.2s;
+}
+
+.animated3 {
+  animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.animated4 {
+  animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-delay: 0.6s;
+}
+
+.animated5 {
+  animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -webkit-animation-delay: 0.8s;
+}
+
+
+
 
 .box_bread {
   border: 4px solid yellow;
@@ -67,40 +100,52 @@ div.hidden {
   visibility: hidden;  /*visible*/
 }
 
-
-
-.brown,
-.red,
-.yellow,
-.green {
+.bread_top,
+.bread_bottom {
   text-align: center;
-  font-size: 40px;
-
+  font-size: 45px;
+  height: 80px;
 }
 
-
-.brown {
-  color: white;
-  background-color: brown;
-  border-radius: 15px;
+.bread_top {
+  color: brown;
+  background-color: yellow;
+  border-radius: 50px 50px 15px 15px;
 }
 
-.red {
-  color: white;
-  background-color: red;
-  border-radius: 15px;
-}
-
-.yellow {
+.bread_bottom {
   color: brown;
   background-color: yellow;
   border-radius: 15px;
 }
 
-.green {
+.sauce {
+  width: 1100px;
   color: white;
-  background-color: green;
+  background-color: red;
+  margin-left: 20px;
   border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
 }
 
+.vegetable {
+  width: 1100px;
+  color: white;
+  background-color: green;
+  margin-left: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.patty {
+  width: 1100px;
+  color: white;
+  background-color: brown;
+  margin-left: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 40px;
+}
 

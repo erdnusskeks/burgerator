@@ -2,13 +2,12 @@
 <!-- <h2>Click for more!</h2> -->
 
 
-<div class="container">
-  <div class="yellow"><%= "your favourite burger lives between two #{@burger.bread} buns" %></div>
-  <!-- <p id="show_patty">Show patty!</p> -->
-  <div class="green" id="vegetable"><%= "decorated with fresh #{@burger.vegetable}" %></div>
-  <div class="red" id="sauce"><%= "joined by a marvellous #{@burger.sauce} sauce" %></div>
-  <div class="brown" id="patty"><%= "it's a #{@burger.patty}licious dream" %></div>
-  <div class="yellow" id="bread"><%= "perfect embrace: The second #{@burger.bread} bun" %></div>
+<div class="container" id="burger">
+  <div class="bread_top animated animated5 bounceInDown"><%= "perfect embrace: the second #{@burger.bread} bun" %></div>
+  <div class="vegetable animated animated4 bounceInDown" id="vegetable"><%= "decorated with fresh #{@burger.vegetable}" %></div>
+  <div class="sauce animated animated3 bounceInDown" id="sauce"><%= "joined by a marvellous #{@burger.sauce} sauce" %></div>
+  <div class="patty animated animated2 bounceInDown" id="patty"><%= "it's a #{@burger.patty}licious dream" %></div>
+  <div class="bread_bottom animated bounceInDown"><%= "your favourite burger lives on this #{@burger.bread} bun" %></div>
 </div>
 <br />
 <%= "Go and grap your fantastic #{@burger.sauce} #{@burger.vegetable} #{@burger.bread} #{@burger.patty} burger!" %><br />
